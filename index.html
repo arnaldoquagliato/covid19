@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <title>Covid-19</title>
+    <script type="text/javascript" src="/eventosScroll.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <img src="./images/covid-19.jpg"/> 
+        <div class="container-menu">
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#saibamais">Saiba Mais</a></li>
+            </ul>    
+        </div>
+        <div class="concientizacao-image">
+            <h2>#ficaemcasa</h2>
+        </div>
+    </header>
+    <div class="container">
+        <div class="item">
+            <h2 id="home">Home</h2>
+        </div>
+        <div class="item">
+            <h2 id="sobre">Sobre</h2>
+        </div>
+        <div class="item">
+            <h2 id="contato">Contato</h2>
+        </div>
+        <div class="item">
+            <h2 id="saibamais">Saiba Mais</h2>
+        </div>
+        <div class="button">
+            <button class="btn">Inicio</button>
+            <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+        </div>
+    </div>
+    <footer>
+        <img src="./images/fica-em-casa-programe-comigo.jpg"/>
+        <img src="./favicon/favicon-32x32.png"/>
+        <div class="icons">
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            <i class="fa fa-github" aria-hidden="true"></i>
+        </div>
+    </footer>
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+  	<script>
+		var link = $(".menu li a");
+		var subir = $(".button button");
+
+		$(window).scroll(function(){
+			var relativePosition = $(this).scrollTop();
+			if (relativePosition>=1200){
+				subir.fadeIn();
+			}else{
+				subir.fadeOut();
+			}
+		})
+
+		link.on("click", function() {
+			var selector = $(this).attr("href");
+			var posicao = $(selector).offset().top;
+			$("html, body").animate({scrollTop: posicao-60}, 1000	)
+
+		})
+		
+		subir.on("click", function(){
+			$("html, body ").animate({scrollTop: 0}, 1000)
+		})
+		
+	</script>
+	
+    
+</body>
+</html>
