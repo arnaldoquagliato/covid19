@@ -17,7 +17,6 @@
                 <ul class="menu">
                     <li><a href="#home"><span>Home</span></a></li>
                     <li><a href="#sobre"><span>Sobre</span></a></li>
-                    <li><a href="#contato"><span>Contato</span></a></li>
                     <li><a href="#saibamais"><span>Saiba Mais</span></a></li>
                 </ul>    
             </div>
@@ -221,7 +220,7 @@
         </div>
 
         <button class="button">
-            <p class="btn-text">Inicio</p>
+            <p class="btn-text">inicio</p>
             <i class="fa fa-angle-double-up" aria-hidden="true"></i>
         </button>
 
@@ -251,7 +250,7 @@
 		link.on("click", function() {
 			var selector = $(this).attr("href");
 			var posicao = $(selector).offset().top;
-			$("html, body").animate({scrollTop: posicao-60}, 1000);
+			$("html, body").animate({scrollTop: posicao-60}, 3000);
 
 		})
 		
