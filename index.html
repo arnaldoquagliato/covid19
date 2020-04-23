@@ -12,7 +12,7 @@
 <body>
     <header class="header">
         <div class="container-header">
-            <img src="./images/header-e-footer/covid-19.jpg"/> 
+            <img src="./images/header-e-footer/fica-em-casa-programe-comigo-editado.jpg"/> 
             <div class="container-menu">
                 <ul class="menu">
                     <li><a href="#home"><span>Home</span></a></li>
@@ -119,10 +119,44 @@
         <div class="item-sobre">
                 <h2 id="sobre">Sobre</h2>
                     <div class="container-sobre">
-                    <img src="./images/perfil.jpeg" alt="" class="img-perfil">
+                        <div class="container-contact">
+                            <img src="./images/perfil.jpeg" alt="" class="img-perfil">
+                            <div class="icons">
+                                <h2 id="contato" class="">Fale Comigo</h2>
+                                
+                                <ul class="list-contacts">
+                                    <li class="contacts">
+                                        <a class="link-contact" target="_blank" href="https://www.facebook.com/arnaldo.quagliato">
+                                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                                            
+                                            <p class="name-icon">Facebook</p>
+                                        </a>
+                                    </li>
+                                    <li class="contacts">
+                                        <a class="link-contact" target="_blank" href="https://github.com/arnaldoquagliato">
+                                            <i  class="fa fa-github" aria-hidden="true"></i>
+                                            
+                                            <p class="name-icon">Github</p>                                            
+                                        </a>
+                                    </li>
+                                    <li class="contacts">
+                                        <a class="link-contact" target="_blank" href="https://www.linkedin.com/in/arnaldo-quagliato-92622b191/">
+                                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                            <p class="name-icon">Linkedin</p>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                                
+                                <div class="link-contact" >
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    
+                                    <p class="name-icon">arnaldoquagliato@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
 
                     <p class="about-text">
-                        
                         Estudante de Engenharia de Software na Universidade Federal do Ceará, campus de Russas, procuro estar em projetos em que possa colocar meus conhecimentos em prática, aprender e adquirir experiência adquirindo habilidades para o crescimento pessoal e profissional. 
                         Além disso, sou um entusiasta por tecnologia em especial, IoT, Ciência de Dados e Desenvolvimento Híbrido.
                     </p>
@@ -152,40 +186,20 @@
         </div>
 
         <div class="item">
-        </div>
-        <div class="item">
             <h2 id="saibamais">
                 Saiba 
                 <i class="fa fa-plus" aria-hidden="true"></i>
             </h2>
         </div>
-            <button class="btn">
-                Inicio
-                <i class="fa fa-angle-double-up" aria-hidden="true"></i>
-            </button>
+
+        <button class="button">
+            Inicio
+            <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+        </button>
+
     </div>
 
-    <footer class="footer">
-        <div class="img-footer">
-            <img class = "img-footer-main" src="./images/header-e-footer/fica-em-casa-programe-comigo-editado.jpg"/>
-        </div>
-        
-        <div class="icons">
-            <h2 id="contato">Contato</h2>
-
-            <a target="_blank" href="https://www.facebook.com/arnaldo.quagliato">
-                <i class="fa fa-facebook-official" aria-hidden="true"></i>
-            </a>
-            <a target="_blank" href="https://www.linkedin.com/in/arnaldo-quagliato-92622b191/">
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-
-            </a>
-            <a target="_blank" href="https://github.com/arnaldoquagliato">
-                <i class="fa fa-github" aria-hidden="true"></i>
-            </a>
-            
-        </div>
-    </footer>
+    <footer class="footer"></footer>
 
 
     <script
@@ -195,7 +209,7 @@
 
   	<script>
 		var link = $(".menu li a");
-		var subir = $(".button button");
+		var subir = $(".button");
 
 		$(window).scroll(function(){
 			var relativePosition = $(this).scrollTop();
