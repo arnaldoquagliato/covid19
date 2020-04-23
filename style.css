@@ -44,7 +44,7 @@ body{
     border-bottom: black 1px solid;
     border-radius: 10px;
     box-shadow: black 1px 1px 3px;
-    padding: 20px 20px;
+    padding: 10px 10px;
 
 }
 
@@ -53,7 +53,7 @@ body{
     text-decoration: none;
 	text-transform: uppercase;
     transition: all 0.4s ease-in-out;
-    font-size: xx-large;
+    font-size: x-large;
     padding-right: 40px;
     color: #2d2d2d;
     font-weight: bold;
@@ -419,8 +419,57 @@ a:hover {
 
 .activity-text li{    
     font-size: 20px;
-    text-align: justify;
     padding-bottom: 15px;
+}
+
+.container-saiba-mais{
+    display: flex;
+    padding: 20px;
+    margin: 50px 50px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.list-saiba-mais{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.potal-noticia img{
+    margin-top: 20px;
+    background-color: #E5E5E5;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 1px 1px 1px 3px black;    
+
+}
+
+
+.img-opovo{
+    width: 400px;
+    height: 200px;
+}
+
+.img-g1{
+    width: 400px;
+    height: 200px;
+}
+
+.img-ufc{
+
+    width: 400px;
+    height: 200px;
+}
+
+.img-ufc-rc{
+    width: 400px;
+    height: 100px;
+}
+.copy{
+    margin-top: 10px;
+    font-size: 13px;
 }
 
 .footer{
@@ -430,4 +479,8 @@ a:hover {
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
+}
+
+.button{
+
 }

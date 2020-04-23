@@ -185,15 +185,43 @@
             </div>
         </div>
 
-        <div class="item">
+        <div class="item-saibamais">
             <h2 id="saibamais">
-                Saiba 
+                Saiba     
                 <i class="fa fa-plus" aria-hidden="true"></i>
+                <p class="copy">&copy; Portais de noticia utilizados</p>
+                
             </h2>
+            <div class="container-saiba-mais">
+                <ul class="list-saiba-mais">
+                    <li class="potal-noticia">
+                        <a href="https://www.opovo.com.br/" class="bloco-portal" target="_blank" >
+                            <img class = "img-opovo" src="./images/saiba-mais-image/opovoonline.jpg" alt="">
+                        </a>
+                    </li>
+                    <li class="potal-noticia">
+                        <a href="https://g1.globo.com/" class="bloco-portal">
+                            <img class = "img-g1" src="./images/saiba-mais-image/g1.png" alt="">
+                        </a>
+                    </li>
+                    <li class="potal-noticia">
+                        <a href="https://www.instagram.com/ufcinforma/" class="bloco-portal">
+                            <img class = "img-ufc" src="./images/saiba-mais-image/ufc.jpg" alt="">
+                        </a>
+                    </li>
+                    <li class="potal-noticia">
+                        <a href="https://www.instagram.com/ufcrussas/" class="bloco-portal">
+                            <img class = "img-ufc-rc" src="./images/saiba-mais-image/ufc-campus-russas.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            
+            </div>
+
         </div>
 
         <button class="button">
-            Inicio
+            <p class="btn-text">Inicio</p>
             <i class="fa fa-angle-double-up" aria-hidden="true"></i>
         </button>
 
@@ -223,12 +251,12 @@
 		link.on("click", function() {
 			var selector = $(this).attr("href");
 			var posicao = $(selector).offset().top;
-			$("html, body").animate({scrollTop: posicao-60}, 1000	)
+			$("html, body").animate({scrollTop: posicao-60}, 1000);
 
 		})
 		
 		subir.on("click", function(){
-			$("html, body ").animate({scrollTop: 0}, 1000)
+			$("html, body ").animate({scrollTop: 0}, 3000)
 		})
 		
 	</script>
